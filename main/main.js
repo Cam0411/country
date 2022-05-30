@@ -36,7 +36,7 @@ function get__src(){
     search__value.addEventListener('keypress',e => {
         if (e.keyCode == 13 &&  search__value.value != ''){
           
-           get__src__country(search__value.value)
+           get__src__country(search__value.value.trim())
            search__value.value = ''
         }
     })
