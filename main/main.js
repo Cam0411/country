@@ -92,7 +92,7 @@ function displayError()
 select.addEventListener('change', function handleChange(event) {
   const countryApi = `https://restcountries.com/v3.1/region/${select.options[select.selectedIndex].text}`
   function getAll(){
- getCountry(render)
+  getCountry(render)
 }
 
 function render(countries){
@@ -118,6 +118,7 @@ function getCountry(callback){
   fetch(countryApi)
   .then(response => {return response.json('')})
   .then(callback)
+
 }
 getAll()
 
