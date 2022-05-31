@@ -113,7 +113,7 @@ body {
 .content .dis__all__country .country__box {
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 10px 15px;
+  padding: 0px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -147,6 +147,7 @@ body {
   max-width: 300px;
   width: 100%;
   margin-top: 10px;
+  padding: 10px 15px;
 }
 
 .content .dis__all__country .txt__box p {
@@ -186,6 +187,12 @@ body {
 @media (max-width: 750px) {
   .content .dis__all__country .country__box {
     text-align: left;
+  }
+  .content .dis__all__country .country__box:hover {
+    background: none;
+  }
+  .content .dis__all__country .country__box:hover .txt__box {
+    color: #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */
